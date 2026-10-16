@@ -41,8 +41,8 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Netlify
 
-Connect this repository to Netlify and deploy the site from the repository root. The included `netlify.toml` runs `npm run build`; Netlify detects Next.js and configures its Next.js adapter automatically.
+Connect this repository to Netlify and deploy the site from the repository root. The included `netlify.toml` runs `npm run build` and sets the publish directory to `.next`; Netlify detects Next.js and configures its Next.js adapter automatically. The adapter turns this build output into the routes, assets, and server functions needed to serve the app.
 
-Do not set a static publish directory or add a catch-all redirect to `index.html`. The Netlify adapter handles Next.js routes, `next/image`, and other supported framework features.
+Keep the publish directory set to `.next`, rather than the repository root or `public`. Do not add a catch-all redirect to `index.html`. The Netlify adapter handles Next.js routes, `next/image`, and other supported framework features. After changing deployment settings, deploy again so Netlify builds and publishes the app with the updated configuration.
 
 See the [Netlify Next.js deployment guide](https://docs.netlify.com/build/frameworks/framework-setup-guides/nextjs/overview/) for details.
