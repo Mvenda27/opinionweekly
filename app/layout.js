@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "The Opinion Weekly",
-  description: "Your weekly dose of opinionated insights",
+  description: "by ntende",
 };
 
 export default function RootLayout({ children }) {

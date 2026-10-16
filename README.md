@@ -18,6 +18,16 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
+## Publish homepage responsiveness changes
+
+On Windows with Git and PowerShell available, run this from the repository root:
+
+```powershell
+.\scripts\publish-responsive-change.ps1
+```
+
+The script verifies the `origin` push URL and refuses to run if there are staged changes. It stages only the homepage responsive stylesheet, this documentation, and the script itself, then commits and pushes the current branch. To use a different commit message, pass `-CommitMessage "Your message"`.
+
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More

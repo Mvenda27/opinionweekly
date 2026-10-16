@@ -66,11 +66,11 @@
   color: var(--text-secondary);
 }
 
-/* Enable hover only on non-touch devices */
+/* Enable hover only on on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
     background: var(--button-primary-hover);
-    border-color: transparent;
+    border-color: greenyellow;
   }
 
   a.secondary:hover {
