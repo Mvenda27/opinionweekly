@@ -6,10 +6,7 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
         <div className={styles.intro}>
-          <p>
-            This website is still under construction. Apologies for any
-            inconvenience caused
-          </p>
+          <p>This website is still under construction.</p>
         </div>
         <Image
           className={styles.logo}
